@@ -172,4 +172,4 @@ console.log("myStrr: " + myStrr);
 // console.log("sampleArray2: " + sampleArray2);
 
 
-//Manipulate Arrays With unshift()
+//Use Conditional Logic with If Statements
