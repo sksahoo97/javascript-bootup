@@ -86,3 +86,76 @@ console.log(ourDog);
 If you have tabular data, you can use an object to lookup values rather than a switch statement or an if/else chain.
 This is most useful when you know that your input data is limited to a certain range.
 */
+const article = {
+  "title": "How to create objects in JavaScript",
+  "link": "https://www.freecodecamp.org/news/a-complete-guide-to-creating-objects-in-javascript-b0e2450655e8/",
+  "author": "Kaashan Hussain",
+  "language": "JavaScript",
+  "tags": "TECHNOLOGY",
+  "createdAt": "NOVEMBER 28, 2018"
+};
+
+const articleAuthor = article["author"];
+const articleLink = article["link"];
+console.log("articleAuthor: " + articleAuthor);
+
+/*
+9] The sub-properties of objects can be accessed by chaining together the dot or bracket notation.
+*/
+const ourStorage = {
+  "desk": {
+    "drawer": "stapler"
+  },
+  "cabinet": {
+    "top drawer": { 
+      "folder1": "a file",
+      "folder2": "secrets"
+    },
+    "bottom drawer": "soda"
+  }
+};
+
+const folder1Value = ourStorage.cabinet["top drawer"].folder2; // bracket notation should be used for keys with multiple words or space
+const drawerValue = ourStorage.desk.drawer;
+console.log("folder1Value: " + folder1Value);
+
+const myStorage = {
+  "car": {
+    "inside": {
+      "glove box": "maps",
+      "passenger seat": "crumbs"
+     },
+    "outside": {
+      "trunk": "jack"
+    }
+  }
+};
+
+const gloveBoxContents = myStorage.car.inside["glove box"];
+console.log("gloveBoxContents: " + gloveBoxContents)
+
+/*
+10] Objects can contain both nested objects and nested arrays.
+Similar to accessing nested objects, array bracket notation can be chained to access nested arrays.
+*/
+const myPlants = [
+  {
+    type: "flowers",
+    list: [
+      "rose",
+      "tulip",
+      "dandelion"
+    ]
+  },
+  {
+    type: "trees",
+    list: [
+      "fir",
+      "pine",
+      "birch"
+    ]
+  }
+];
+
+const secondTree = myPlants[1].list[1];
+console.log("secondTree: " + secondTree);
