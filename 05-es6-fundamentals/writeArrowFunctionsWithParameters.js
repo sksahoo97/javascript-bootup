@@ -1,0 +1,17 @@
+/**
+ * Just like a regular function, you can pass arguments into an arrow function.
+ *      const doubler = (item) => item * 2;
+ *      doubler(4);
+ * doubler(4) would return the value 8.
+ * 
+ * If an arrow function has a single parameter, the parentheses enclosing the parameter may be omitted.
+ *      const doubler = item => item * 2;
+ * 
+ * It is possible to pass more than one argument into an arrow function.
+ *      const multiplier = (item, multi) => item * multi;
+ *      multiplier(4, 2);
+ * multiplier(4, 2) would return the value 8.
+ */
+const myConcat = (arr1, arr2) => arr1.concat(arr2);
+
+console.log("Result after concating arrays - [1, 2] and [3, 4, 5, 7]: " + myConcat([1, 2], [3, 4, 5, 7]));
